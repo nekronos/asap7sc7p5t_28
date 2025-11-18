@@ -41,11 +41,7 @@ module AND2x2_ASAP7_75t_SL (Y, A, B);
 	// Function
 	and (Y, A, B);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -59,11 +55,7 @@ module AND2x4_ASAP7_75t_SL (Y, A, B);
 	// Function
 	and (Y, A, B);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -77,11 +69,7 @@ module AND2x6_ASAP7_75t_SL (Y, A, B);
 	// Function
 	and (Y, A, B);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -95,12 +83,7 @@ module AND3x1_ASAP7_75t_SL (Y, A, B, C);
 	// Function
 	and (Y, A, B, C);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -114,12 +97,7 @@ module AND3x2_ASAP7_75t_SL (Y, A, B, C);
 	// Function
 	and (Y, A, B, C);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -133,12 +111,7 @@ module AND3x4_ASAP7_75t_SL (Y, A, B, C);
 	// Function
 	and (Y, A, B, C);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -152,13 +125,7 @@ module AND4x1_ASAP7_75t_SL (Y, A, B, C, D);
 	// Function
 	and (Y, A, B, C, D);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -172,13 +139,7 @@ module AND4x2_ASAP7_75t_SL (Y, A, B, C, D);
 	// Function
 	and (Y, A, B, C, D);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -192,14 +153,7 @@ module AND5x1_ASAP7_75t_SL (Y, A, B, C, D, E);
 	// Function
 	and (Y, A, B, C, D, E);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-		(E => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -213,14 +167,7 @@ module AND5x2_ASAP7_75t_SL (Y, A, B, C, D, E);
 	// Function
 	and (Y, A, B, C, D, E);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-		(E => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -250,51 +197,7 @@ module FAx1_ASAP7_75t_SL (CON, SN, A, B, CI);
 	and (int_fwire_6, A, B, CI__bar);
 	or (SN, int_fwire_6, int_fwire_5, int_fwire_4, int_fwire_3);
 
-	// Timing
-	specify
-		if ((B & ~CI))
-			(A => CON) = 0;
-		if ((~B & CI))
-			(A => CON) = 0;
-		ifnone (A => CON) = 0;
-		if ((A & ~CI))
-			(B => CON) = 0;
-		if ((~A & CI))
-			(B => CON) = 0;
-		ifnone (B => CON) = 0;
-		if ((A & ~B))
-			(CI => CON) = 0;
-		if ((~A & B))
-			(CI => CON) = 0;
-		ifnone (CI => CON) = 0;
-		if ((B & ~CI))
-			(A => SN) = 0;
-		if ((~B & CI))
-			(A => SN) = 0;
-		ifnone (A => SN) = 0;
-		if ((B & CI))
-			(A => SN) = 0;
-		if ((~B & ~CI))
-			(A => SN) = 0;
-		if ((A & ~CI))
-			(B => SN) = 0;
-		if ((~A & CI))
-			(B => SN) = 0;
-		ifnone (B => SN) = 0;
-		if ((A & CI))
-			(B => SN) = 0;
-		if ((~A & ~CI))
-			(B => SN) = 0;
-		if ((A & ~B))
-			(CI => SN) = 0;
-		if ((~A & B))
-			(CI => SN) = 0;
-		ifnone (CI => SN) = 0;
-		if ((A & B))
-			(CI => SN) = 0;
-		if ((~A & ~B))
-			(CI => SN) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -316,19 +219,7 @@ module HAxp5_ASAP7_75t_SL (CON, SN, A, B);
 	and (int_fwire_1, A, B);
 	or (SN, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		(A => CON) = 0;
-		(B => CON) = 0;
-		if (B)
-			(A => SN) = 0;
-		if (~B)
-			(A => SN) = 0;
-		if (A)
-			(B => SN) = 0;
-		if (~A)
-			(B => SN) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -351,24 +242,7 @@ module MAJIxp5_ASAP7_75t_SL (Y, A, B, C);
 	and (int_fwire_2, A__bar, B__bar);
 	or (Y, int_fwire_2, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if ((B & ~C))
-			(A => Y) = 0;
-		if ((~B & C))
-			(A => Y) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & ~C))
-			(B => Y) = 0;
-		if ((~A & C))
-			(B => Y) = 0;
-		ifnone (B => Y) = 0;
-		if ((A & ~B))
-			(C => Y) = 0;
-		if ((~A & B))
-			(C => Y) = 0;
-		ifnone (C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -387,24 +261,7 @@ module MAJx2_ASAP7_75t_SL (Y, A, B, C);
 	and (int_fwire_2, A, B);
 	or (Y, int_fwire_2, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if ((B & ~C))
-			(A => Y) = 0;
-		if ((~B & C))
-			(A => Y) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & ~C))
-			(B => Y) = 0;
-		if ((~A & C))
-			(B => Y) = 0;
-		ifnone (B => Y) = 0;
-		if ((A & ~B))
-			(C => Y) = 0;
-		if ((~A & B))
-			(C => Y) = 0;
-		ifnone (C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -423,24 +280,7 @@ module MAJx3_ASAP7_75t_SL (Y, A, B, C);
 	and (int_fwire_2, A, B);
 	or (Y, int_fwire_2, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if ((B & ~C))
-			(A => Y) = 0;
-		if ((~B & C))
-			(A => Y) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & ~C))
-			(B => Y) = 0;
-		if ((~A & C))
-			(B => Y) = 0;
-		ifnone (B => Y) = 0;
-		if ((A & ~B))
-			(C => Y) = 0;
-		if ((~A & B))
-			(C => Y) = 0;
-		ifnone (C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -458,11 +298,7 @@ module NAND2x1_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -480,11 +316,7 @@ module NAND2x1p5_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -502,11 +334,7 @@ module NAND2x2_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -524,11 +352,7 @@ module NAND2xp33_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -546,11 +370,7 @@ module NAND2xp5_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -568,11 +388,7 @@ module NAND2xp67_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -591,12 +407,7 @@ module NAND3x1_ASAP7_75t_SL (Y, A, B, C);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar, C__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -615,12 +426,7 @@ module NAND3x2_ASAP7_75t_SL (Y, A, B, C);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar, C__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -639,12 +445,7 @@ module NAND3xp33_ASAP7_75t_SL (Y, A, B, C);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar, C__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -665,13 +466,7 @@ module NAND4xp25_ASAP7_75t_SL (Y, A, B, C, D);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar, C__bar, D__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -692,13 +487,7 @@ module NAND4xp75_ASAP7_75t_SL (Y, A, B, C, D);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar, C__bar, D__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -720,14 +509,7 @@ module NAND5xp2_ASAP7_75t_SL (Y, A, B, C, D, E);
 	not (A__bar, A);
 	or (Y, A__bar, B__bar, C__bar, D__bar, E__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-		(E => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -745,11 +527,7 @@ module NOR2x1_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -767,11 +545,7 @@ module NOR2x1p5_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -789,11 +563,7 @@ module NOR2x2_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -811,11 +581,7 @@ module NOR2xp33_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -833,11 +599,7 @@ module NOR2xp67_ASAP7_75t_SL (Y, A, B);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -856,12 +618,7 @@ module NOR3x1_ASAP7_75t_SL (Y, A, B, C);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar, C__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -880,12 +637,7 @@ module NOR3x2_ASAP7_75t_SL (Y, A, B, C);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar, C__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -904,12 +656,7 @@ module NOR3xp33_ASAP7_75t_SL (Y, A, B, C);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar, C__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -930,13 +677,7 @@ module NOR4xp25_ASAP7_75t_SL (Y, A, B, C, D);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar, C__bar, D__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -957,13 +698,7 @@ module NOR4xp75_ASAP7_75t_SL (Y, A, B, C, D);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar, C__bar, D__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -985,14 +720,7 @@ module NOR5xp2_ASAP7_75t_SL (Y, A, B, C, D, E);
 	not (A__bar, A);
 	and (Y, A__bar, B__bar, C__bar, D__bar, E__bar);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-		(E => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1006,11 +734,7 @@ module OR2x2_ASAP7_75t_SL (Y, A, B);
 	// Function
 	or (Y, A, B);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1024,11 +748,7 @@ module OR2x4_ASAP7_75t_SL (Y, A, B);
 	// Function
 	or (Y, A, B);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1042,11 +762,7 @@ module OR2x6_ASAP7_75t_SL (Y, A, B);
 	// Function
 	or (Y, A, B);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1060,12 +776,7 @@ module OR3x1_ASAP7_75t_SL (Y, A, B, C);
 	// Function
 	or (Y, A, B, C);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1079,12 +790,7 @@ module OR3x2_ASAP7_75t_SL (Y, A, B, C);
 	// Function
 	or (Y, A, B, C);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1098,12 +804,7 @@ module OR3x4_ASAP7_75t_SL (Y, A, B, C);
 	// Function
 	or (Y, A, B, C);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1117,13 +818,7 @@ module OR4x1_ASAP7_75t_SL (Y, A, B, C, D);
 	// Function
 	or (Y, A, B, C, D);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1137,13 +832,7 @@ module OR4x2_ASAP7_75t_SL (Y, A, B, C, D);
 	// Function
 	or (Y, A, B, C, D);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1157,14 +846,7 @@ module OR5x1_ASAP7_75t_SL (Y, A, B, C, D, E);
 	// Function
 	or (Y, A, B, C, D, E);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-		(E => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1178,14 +860,7 @@ module OR5x2_ASAP7_75t_SL (Y, A, B, C, D, E);
 	// Function
 	or (Y, A, B, C, D, E);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-		(B => Y) = 0;
-		(C => Y) = 0;
-		(D => Y) = 0;
-		(E => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1198,9 +873,7 @@ module TIEHIx1_ASAP7_75t_SL (H);
 	// Function
 	buf (H, 1'b1);
 
-	// Timing
-	specify
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1213,9 +886,7 @@ module TIELOx1_ASAP7_75t_SL (L);
 	// Function
 	buf (L, 1'b0);
 
-	// Timing
-	specify
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1236,17 +907,7 @@ module XNOR2x1_ASAP7_75t_SL (Y, A, B);
 	and (int_fwire_1, A, B);
 	or (Y, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if (B)
-			(A => Y) = 0;
-		if (~B)
-			(A => Y) = 0;
-		if (A)
-			(B => Y) = 0;
-		if (~A)
-			(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1267,17 +928,7 @@ module XNOR2x2_ASAP7_75t_SL (Y, A, B);
 	and (int_fwire_1, A, B);
 	or (Y, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if (B)
-			(A => Y) = 0;
-		if (~B)
-			(A => Y) = 0;
-		if (A)
-			(B => Y) = 0;
-		if (~A)
-			(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1298,17 +949,7 @@ module XNOR2xp5_ASAP7_75t_SL (Y, A, B);
 	and (int_fwire_1, A, B);
 	or (Y, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if (B)
-			(A => Y) = 0;
-		if (~B)
-			(A => Y) = 0;
-		if (A)
-			(B => Y) = 0;
-		if (~A)
-			(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1329,17 +970,7 @@ module XOR2x1_ASAP7_75t_SL (Y, A, B);
 	and (int_fwire_1, A, B__bar);
 	or (Y, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if (~B)
-			(A => Y) = 0;
-		if (B)
-			(A => Y) = 0;
-		if (~A)
-			(B => Y) = 0;
-		if (A)
-			(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1360,17 +991,7 @@ module XOR2x2_ASAP7_75t_SL (Y, A, B);
 	and (int_fwire_1, A, B__bar);
 	or (Y, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if (~B)
-			(A => Y) = 0;
-		if (B)
-			(A => Y) = 0;
-		if (~A)
-			(B => Y) = 0;
-		if (A)
-			(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -1391,17 +1012,7 @@ module XOR2xp5_ASAP7_75t_SL (Y, A, B);
 	and (int_fwire_1, A, B__bar);
 	or (Y, int_fwire_1, int_fwire_0);
 
-	// Timing
-	specify
-		if (~B)
-			(A => Y) = 0;
-		if (B)
-			(A => Y) = 0;
-		if (~A)
-			(B => Y) = 0;
-		if (A)
-			(B => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 

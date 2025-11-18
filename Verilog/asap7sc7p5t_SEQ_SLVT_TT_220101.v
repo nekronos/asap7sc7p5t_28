@@ -533,16 +533,7 @@ module DFFHQNx1_ASAP7_75t_SL (QN, D, CLK);
 	altos_dff (int_fwire_IQN, notifier, delayed_CLK, int_fwire_d, xcr_0);
 	buf (QN, int_fwire_IQN);
 
-	// Timing
-	specify
-		(posedge CLK => (QN+:!D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -563,16 +554,7 @@ module DFFHQNx2_ASAP7_75t_SL (QN, D, CLK);
 	altos_dff (int_fwire_IQN, notifier, delayed_CLK, int_fwire_d, xcr_0);
 	buf (QN, int_fwire_IQN);
 
-	// Timing
-	specify
-		(posedge CLK => (QN+:!D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -593,16 +575,7 @@ module DFFHQNx3_ASAP7_75t_SL (QN, D, CLK);
 	altos_dff (int_fwire_IQN, notifier, delayed_CLK, int_fwire_d, xcr_0);
 	buf (QN, int_fwire_IQN);
 
-	// Timing
-	specify
-		(posedge CLK => (QN+:!D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -622,16 +595,7 @@ module DFFHQx4_ASAP7_75t_SL (Q, D, CLK);
 	altos_dff (int_fwire_IQ, notifier, delayed_CLK, delayed_D, xcr_0);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(posedge CLK => (Q+:D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -654,16 +618,7 @@ module DFFLQNx1_ASAP7_75t_SL (QN, D, CLK);
 	altos_dff (int_fwire_IQN, notifier, int_fwire_clk, int_fwire_d, xcr_0);
 	buf (QN, int_fwire_IQN);
 
-	// Timing
-	specify
-		(negedge CLK => (QN+:!D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -686,16 +641,7 @@ module DFFLQNx2_ASAP7_75t_SL (QN, D, CLK);
 	altos_dff (int_fwire_IQN, notifier, int_fwire_clk, int_fwire_d, xcr_0);
 	buf (QN, int_fwire_IQN);
 
-	// Timing
-	specify
-		(negedge CLK => (QN+:!D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -718,16 +664,7 @@ module DFFLQNx3_ASAP7_75t_SL (QN, D, CLK);
 	altos_dff (int_fwire_IQN, notifier, int_fwire_clk, int_fwire_d, xcr_0);
 	buf (QN, int_fwire_IQN);
 
-	// Timing
-	specify
-		(negedge CLK => (QN+:!D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -748,16 +685,7 @@ module DFFLQx4_ASAP7_75t_SL (Q, D, CLK);
 	altos_dff (int_fwire_IQ, notifier, int_fwire_clk, delayed_D, xcr_0);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(negedge CLK => (Q+:D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -776,15 +704,7 @@ module DHLx1_ASAP7_75t_SL (Q, D, CLK);
 	altos_latch (int_fwire_IQ, notifier, delayed_CLK, delayed_D);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(D => Q) = 0;
-		(posedge CLK => (Q+:D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -803,15 +723,7 @@ module DHLx2_ASAP7_75t_SL (Q, D, CLK);
 	altos_latch (int_fwire_IQ, notifier, delayed_CLK, delayed_D);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(D => Q) = 0;
-		(posedge CLK => (Q+:D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -830,15 +742,7 @@ module DHLx3_ASAP7_75t_SL (Q, D, CLK);
 	altos_latch (int_fwire_IQ, notifier, delayed_CLK, delayed_D);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(D => Q) = 0;
-		(posedge CLK => (Q+:D)) = 0;
-		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& D, 0, 0, notifier);
-		$width (posedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -858,15 +762,7 @@ module DLLx1_ASAP7_75t_SL (Q, D, CLK);
 	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(D => Q) = 0;
-		(negedge CLK => (Q+:D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -886,15 +782,7 @@ module DLLx2_ASAP7_75t_SL (Q, D, CLK);
 	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(D => Q) = 0;
-		(negedge CLK => (Q+:D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -914,15 +802,7 @@ module DLLx3_ASAP7_75t_SL (Q, D, CLK);
 	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
 	buf (Q, int_fwire_IQ);
 
-	// Timing
-	specify
-		(D => Q) = 0;
-		(negedge CLK => (Q+:D)) = 0;
-		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (negedge CLK &&& D, 0, 0, notifier);
-		$width (negedge CLK &&& ~D, 0, 0, notifier);
-	endspecify
+	
 endmodule
 `endcelldefine
 

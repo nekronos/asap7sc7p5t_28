@@ -41,10 +41,7 @@ module BUFx10_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -58,10 +55,7 @@ module BUFx12_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -75,10 +69,7 @@ module BUFx12f_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -92,10 +83,7 @@ module BUFx16f_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -109,10 +97,7 @@ module BUFx24_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -126,10 +111,7 @@ module BUFx2_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -143,10 +125,7 @@ module BUFx3_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -160,10 +139,7 @@ module BUFx4_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -177,10 +153,7 @@ module BUFx4f_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -194,10 +167,7 @@ module BUFx5_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -211,10 +181,7 @@ module BUFx6f_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -228,10 +195,7 @@ module BUFx8_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -245,10 +209,7 @@ module CKINVDCx10_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -262,10 +223,7 @@ module CKINVDCx11_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -279,10 +237,7 @@ module CKINVDCx12_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -296,10 +251,7 @@ module CKINVDCx14_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -313,10 +265,7 @@ module CKINVDCx16_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -330,10 +279,7 @@ module CKINVDCx20_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -347,10 +293,7 @@ module CKINVDCx5p33_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -364,10 +307,7 @@ module CKINVDCx6p67_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -381,10 +321,7 @@ module CKINVDCx8_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -398,10 +335,7 @@ module CKINVDCx9p33_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -415,10 +349,7 @@ module HB1xp67_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -432,10 +363,7 @@ module HB2xp67_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -449,10 +377,7 @@ module HB3xp67_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -466,10 +391,7 @@ module HB4xp67_ASAP7_75t_L (Y, A);
 	// Function
 	buf (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -483,10 +405,7 @@ module INVx11_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -500,10 +419,7 @@ module INVx13_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -517,10 +433,7 @@ module INVx1_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -534,10 +447,7 @@ module INVx2_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -551,10 +461,7 @@ module INVx3_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -568,10 +475,7 @@ module INVx4_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -585,10 +489,7 @@ module INVx5_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -602,10 +503,7 @@ module INVx6_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -619,10 +517,7 @@ module INVx8_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -636,10 +531,7 @@ module INVxp33_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
@@ -653,10 +545,7 @@ module INVxp67_ASAP7_75t_L (Y, A);
 	// Function
 	not (Y, A);
 
-	// Timing
-	specify
-		(A => Y) = 0;
-	endspecify
+	
 endmodule
 `endcelldefine
 
